@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="public/favicon.png" />
     <link rel="stylesheet" href="landing-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppsDev Template</title>
 </head>
@@ -11,21 +14,35 @@
     <div id="app">
         <div class="main-container">
             <div class="left-side">
-              <div class="top-design">
-                <img src="public/Linechart.png" alt="" class="top-linechart">
-                <img src="public/blue_gradient.svg" alt="" class="blue-gradient">
-              </div>
-              <div class="bottom-design">
-                <img src="public/Linechart.png" alt="" class="bottom-linechart">
-              </div>
+                <div class="logo">
+                    <img src="public/logo.svg" alt="" class="logo">
+                </div>
+                    <div class="top-design">
+                        <div class="blue-gradient-container">
+                            <img src="public/blue_gradient.svg" alt="" class="blue-gradient">
+                        </div>
+                        <img src="public/Linechart.png" alt="" class="top-linechart">
+                    </div>
+                    <div class="bottom-design">
+                        <img src="public/Linechart1.png" alt="Bottom Line Chart" class="bottom-linechart">
+                    </div>
             </div>
             <div class="right-side">
                 <img src="public/people.svg" alt="" class="background-image">
             </div>
         </div>
-        <!-- Center glass effect overlay -->
-        <div class="center-glass"></div>
+        <div class="center-glass">
+            <div class="welcome-message">
+                <img src="public/Landing-Page-Title.svg" alt="Landing Page Title">
+                <p class="welcome-text">Post your thoughts, catch up with friends, and be part of the community—right here, right now.</p>
+            </div>
+            <!-- Button HTML -->
+            <div class="button">
+                <span id="get_started">Let's Get Started!</span>
+                <span id="btn_back"></span>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
     </div>
-    <script type="module" src="/main.js"></script>
 </body>
 </html>
