@@ -23,7 +23,10 @@ html, body {
     height: 100%;
     background-color: rgb(0, 0, 0);
     position: relative;
+<<<<<<< HEAD
     background-image: url('public');
+=======
+>>>>>>> origin/main
 }
 
 .logo img{
@@ -147,9 +150,14 @@ html, body {
 #btn_back {
     position: absolute;
     top: 6px;
+<<<<<<< HEAD
     left: 34%;
     right: 0;
     width: 30%;
+=======
+    left: 32%;
+    width: 33%;
+>>>>>>> origin/main
     height: 100%;
     background-color: #6092C0; 
     border-radius: 10px;
@@ -159,7 +167,11 @@ html, body {
 }
 
 .button:hover #btn_back {
+<<<<<<< HEAD
     opacity: 0.53; 
+=======
+    opacity: 53%; 
+>>>>>>> origin/main
     transform: translate(4px, 4px); 
     border: 1.5px solid white;
 }
@@ -168,6 +180,7 @@ html, body {
     color: #090808; 
     transform: translate(4px, 4px);
     border-color: #ffffff; 
+<<<<<<< HEAD
 }
 
 @media (max-width: 768px) {
@@ -250,4 +263,6 @@ html, body {
     .bottom-linechart {
         display: none;
     }
+=======
+>>>>>>> origin/main
 }
