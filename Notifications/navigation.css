@@ -1,0 +1,141 @@
+
+#navigation {
+    width: 100%;
+    max-width: 855px;
+    height: 85px;
+    background-color: 000000;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 19px 19px 0 0;
+}
+
+
+.setting-icon-btn {
+    position: absolute;
+    bottom: 20px;
+    left: -70px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+
+.setting-icon-btn:hover {
+    bottom: 30px;
+}
+
+#navigation svg {
+    pointer-events: none;
+    margin-top: 35%;
+    width: 35.5px;
+    height: 35.5px;
+    transition: transform 0.3s ease;
+}
+
+#search-icon-btn:hover svg {
+    transform: translateY(-7px); 
+}
+
+#thread-icon-btn:hover svg {
+    transform: translateY(-7px); 
+}
+
+#profile-icon-btn:hover svg {
+    transform: translateY(-7px); 
+}
+
+#liked-icon-btn:hover svg {
+    transform: translateY(-7px); 
+}
+
+#home-icon-btn:hover svg {
+    transform: translateY(-7px); 
+}
+
+#search-icon-btn svg path,
+#thread-icon-btn svg path {
+    transition: stroke 0.3s ease; 
+}
+
+#profile-icon-btn svg path,
+#liked-icon-btn svg path,
+#home-icon-btn svg path {
+    transition: fill 0.3s ease;
+}
+
+#search-icon-btn:hover svg path {
+    stroke: #FFF84B;
+}
+
+#thread-icon-btn:hover svg path {
+    stroke: #FFF84B;
+}
+
+#profile-icon-btn:hover svg path {
+    fill: #FFF84B;
+}
+
+#liked-icon-btn:hover svg path {
+    fill: #FFF84B;
+}
+
+#home-icon-btn:hover svg path {
+    fill: #FFF84B;
+}
+
+#navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-text {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    opacity: 0;
+    color: white;
+    transition: color 0.3s ease,opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+}
+
+#search-icon-btn:hover .icon-text {
+    color: #FFF84B;
+    opacity: 1;
+    transform: translateY(-5px); 
+}
+
+#home-icon-btn:hover .icon-text {
+    color: #FFF84B;
+    opacity: 1;
+    transform: translateY(-5px); 
+}
+
+#thread-icon-btn:hover .icon-text {
+    color: #FFF84B;
+    opacity: 1;
+    transform: translateY(-5px); 
+}
+
+#liked-icon-btn:hover .icon-text {
+    color: #FFF84B;
+    opacity: 1;
+    transform: translateY(-5px); 
+}
+
+#profile-icon-btn:hover .icon-text {
+    color: #FFF84B;
+    opacity: 1;
+    transform: translateY(-5px); 
+}
